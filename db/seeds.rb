@@ -11,3 +11,4 @@
 John = User.create(username: 'John', password: 'password')
 hobby_1 = Hobby.create(hobbies: 'Watching Movies', likes: 1, user_id: John.id)
 hobby_2 = Hobby.create(hobbies: 'Reading NewsPaper', likes: 2, user_id: John.id)
+Subhan = User.create(username: 'Subhan', password: 'subhan123')
