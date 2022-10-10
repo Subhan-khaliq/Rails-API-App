@@ -7,13 +7,15 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def show
-    render json: @user
+    render json: {errors: @user.errors, error_message: $ERROR_INFO}
+    # render json: @user
   end
 
   def create
     if User.create(user_params)
       render json: @user
     else
+      # render @user.errors.full_messasges.join('/n')
       render error: {error: "Something Went Wrong"}, status: 400
     end
 
