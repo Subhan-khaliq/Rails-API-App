@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-david = User.create( username: 'David', password: 'password' )
-hobby_1 = Hobby.create( hobbies: 'Playing Cricket', likes: 1, user_id: david.id )
-hobby_2 = Hobby.create( hobbies: 'Reading Bookd', likes: 2, user_id: david.id )
+John = User.create( username: 'John', password: 'password' )
+hobby_1 = Hobby.create( hobbies: 'Watching Movies', likes: 1, user_id: John.id )
+hobby_2 = Hobby.create( hobbies: 'Reading NewsPaper', likes: 2, user_id: John.id )
